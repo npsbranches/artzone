@@ -46,6 +46,46 @@ textarea {
     margin: 0 auto;
 }
 
+
+.c-yellow {
+    color: #f7d917;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.section-title-line {
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #f7d917;
+}
+
+
+.section-title-right {
+    justify-content: flex-end;
+}
+
+.section-title-right h2 {
+    margin-right: 40px;
+}
+
+.section-title-left {
+    justify-content: flex-start;
+}
+
+.section-title-left h2 {
+    margin-left: 40px;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .header {
@@ -145,10 +185,6 @@ textarea {
     text-transform: uppercase;
 }
 
-.hero-text h1 span {
-    color: #f7d917;
-}
-
 .hero-text h3 {
     font-size: 24px;
     text-transform: uppercase;
@@ -165,6 +201,97 @@ textarea {
     color: #e0e0e0;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT COMPANY * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.about-company {
+    padding-top: 40px;
+}
+
+.about-company-text {
+    background-image: url('../images/backgrounds/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 130px;
+    margin-top: 30px;
+    padding: 40px 0;
+}
+
+.about-company-text .container {
+    transform: translateX(-55px);
+    padding-left: 150px;
+    text-align: right;
+}
+
+.about-company-text p {
+    font-size: 24px;
+    line-height: 32px;
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ADVANTAGES * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.advantages {
+    margin-top: 50px;
+    position: relative;
+}
+
+.advantages-background {
+    position: absolute;
+    height: 300px;
+    width: 60%;
+    right: 0;
+    background-image: url('../images/backgrounds/advantages-bg-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.advantages-cards {
+    background-image: url('../images/backgrounds/advantages-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 130px;
+    padding: 40px 0;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.advantages-cards .container {
+    transform: translateX(55px);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.advantages-card {
+    flex-basis: 30%;
+    padding: 30px;
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+.advantages-img {
+    height: 90px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.advantages-card h3 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.advantages-card p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+    font-weight: 500;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1600 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
