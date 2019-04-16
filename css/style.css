@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Gilroy', sans-serif;
+}
+
+body {
+    padding-bottom: 1000px;
 }
 
 a {
@@ -32,3 +38,142 @@ textarea {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.header {
+    background-image: url('../images/backgrounds/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo a {
+    height: 68px;
+    display: block;
+}
+
+.header-logo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu ul li {
+    margin: 0 20px;
+}
+
+.header-menu ul li a {
+    font-size: 12px;
+    font-weight: 900;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.header-menu ul li a:hover {
+    color: #f7d917;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.hero {
+    background: #f6f6f6;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-img {
+    height: 400px;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img {
+    height: 100%;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    flex-basis: 50%;
+}
+
+.hero-text h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.hero-text h1 span {
+    color: #f7d917;
+}
+
+.hero-text h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbbbbb;
+}
+
+.hero-background-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 144px;
+    font-weight: 700;
+    color: #e0e0e0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1600 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 1600px) {
+    .hero-img {
+        height: 300px;
+    }
+
+    .hero-background-text {
+        font-size: 100px;
+    }
+}
