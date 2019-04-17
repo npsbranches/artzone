@@ -391,11 +391,11 @@ textarea {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * TESTIMONIALS SLIDER * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 .testimonials {
     background: #f6f6f6;
     padding: 50px 0;
 }
-
 
 .testimonials-images {
     width: 400px;

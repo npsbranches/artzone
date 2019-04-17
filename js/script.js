@@ -2,9 +2,8 @@ $('.teachers').slick({
     slidesToShow: 4,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     slidesToScroll: 1
-    
 })
 
 $('.testimonials-images').slick({
@@ -19,6 +18,7 @@ $('.testimonials-images').slick({
     autoplaySpeed: 2000,
     slidesToScroll: 1,
 })
+
 $('.testimonials-text').slick({
     doots: false,
     infinite: true,
