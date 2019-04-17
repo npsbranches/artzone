@@ -38,6 +38,27 @@ textarea {
     background: none;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.btn-yellow {
+    background: #f7d917;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 15px;
+    transition: 0.2s;
+}
+
+.btn-yellow:hover {
+    background: #ddc002;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .container {
@@ -264,7 +285,6 @@ textarea {
     transform: translateX(55px);
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .advantages-card {
@@ -340,6 +360,15 @@ textarea {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * TEACHERS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.teachers-section {
+    padding-top: 50px;
+}
+
+.teachers-section .section-title {
+    margin-bottom: 50px;
+}
+
 .teachers {
     max-width: 100%;
     position: relative;
@@ -362,6 +391,7 @@ textarea {
 
 .teachers-photo img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -372,6 +402,7 @@ textarea {
     justify-content: center;
     text-align: center;
 }
+
 .teachers-name h3 {
     font-weight: 900;
     font-size: 14px;
@@ -382,6 +413,7 @@ textarea {
     background: #f4d717;
     color: #000;
 }
+
 .teachers-card-black .teachers-name {
     background: #222222;
     color: #fff;
@@ -401,6 +433,19 @@ textarea {
 .testimonials-images {
     width: 400px;
     margin: auto;
+}
+
+.testimonials-images  {
+    opacity: 0;
+    visibility: hidden;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.testimonials-images.slick-initialized {
+    visibility: visible;
+    opacity: 1;
 }
 
 .testimonials-images .slick-track {
@@ -462,7 +507,18 @@ textarea {
     margin: auto;
     text-align: center;
 }
+.testimonials-text  {
+    opacity: 0;
+    visibility: hidden;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
 
+.testimonials-text.slick-initialized {
+    visibility: visible;
+    opacity: 1;
+}
 .testimonials-text p {
     font-size: 14px;
     font-weight: 700;
@@ -481,6 +537,7 @@ textarea {
     font-size: 12px;
     font-weight: 500;
 }
+
 /* 
 .testimonials-images .slick-slide.testimonials-img{
     height: 100px;
@@ -510,6 +567,95 @@ textarea {
 
 
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * COURSES * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.courses {
+    position: relative;
+    padding-top: 80px;
+}
+
+.courses-background-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 144px;
+    font-weight: 700;
+    color: #ebebeb;
+}
+
+.courses-cards {
+    background-image: url('../images/backgrounds/courses-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 50px 0;
+    padding: 50px 0;
+    margin-left: 130px;
+}
+
+.courses-cards .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: translateX(-55px);
+    padding-left: 130px;
+}
+
+.courses-card {
+    width: 320px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.courses-card:before {
+    display: block;
+    content: '';
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background: #f7d917;
+    position: absolute;
+    left: 30px;
+    top: -30px;
+}
+.courses-card-img {
+    width: 100%;
+    height: 250px;
+}
+
+.courses-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.courses-card-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.courses-card-name h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.courses .btn-yellow {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    width: max-content;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1600 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 1600px) {
@@ -518,6 +664,10 @@ textarea {
     }
 
     .hero-background-text {
+        font-size: 100px;
+    }
+
+    .courses-background-text {
         font-size: 100px;
     }
 }
