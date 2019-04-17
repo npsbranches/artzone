@@ -8,6 +8,7 @@
 
 body {
     padding-bottom: 1000px;
+    overflow-x: hidden;
 }
 
 a {
