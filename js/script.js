@@ -32,3 +32,7 @@ $('.testimonials-text').slick({
     autoplaySpeed: 2000,
     slidesToScroll: 1,
 })
+
+$('.courses-card-wrapper').click(function() {
+    $(this).children('.courses-more').toggleClass('active');
+})

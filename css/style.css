@@ -579,6 +579,11 @@ iframe {
     padding-left: 130px;
 }
 
+.courses-card-wrapper {
+    width: 320px;
+    margin: 20px 0;
+    cursor: pointer;
+}
 .courses-card {
     width: 320px;
     margin: 20px 0;
@@ -597,11 +602,13 @@ iframe {
     position: absolute;
     left: 30px;
     top: -30px;
+    z-index: 1;
 }
 
 .courses-card-img {
     width: 100%;
     height: 250px;
+    position: relative;
 }
 
 .courses-card-img img {
@@ -638,12 +645,101 @@ iframe {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * COURSES MORE * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+.courses-more {
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    background: #fff;
+    z-index: 20;
+    height: 90%;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
 
+.courses-more.active {
+    visibility: visible;
+    opacity: 1;
+}
 
+.courses-more:before {
+    display: block;
+    content: '';
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background: #f7d917;
+    position: absolute;
+    left: 30px;
+    top: -30px;
+    z-index: 20;
+}
 
+.courses-more-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
 
+.courses-more-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.courses-more-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.courses-more-name h4 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.courses-more-info {
+    background-image: url('../images/backgrounds/courses-more-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
+}
+
+.courses-more-info p {
+    padding: 30px 60px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.courses-more-info ul li {
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.courses-more-info ul li:before {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 7px;
+    background: #f7d917;
+    margin-right: 10px;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * ADDITIONAL COURSES * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .additional-courses {
