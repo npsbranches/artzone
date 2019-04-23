@@ -1067,7 +1067,6 @@ iframe {
     }
 
     .header-menu {
-        position: absolute;
         width: 100%;
         height: 100%;
         z-index: 999;
@@ -1076,6 +1075,7 @@ iframe {
         background: #fff;
         visibility: hidden;
         opacity: 0;
+        position: fixed;
     }
 
     .header-menu.active {
