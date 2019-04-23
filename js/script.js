@@ -55,4 +55,5 @@ $(".header-menu").on("click", "a", function (event) {
 $('.btn-bars').click(function() {
     $('.header-menu').toggleClass('active');
     $(this).toggleClass('active');
+    $('body').toggleClass('overflow');
 })
