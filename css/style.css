@@ -1085,7 +1085,7 @@ iframe {
     .header-menu ul {
         display: flex;
         flex-direction: column;
-        height: 120%;
+        height: 100%;
         width: 100%;
         align-items: center;
         justify-content: center;
