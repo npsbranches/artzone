@@ -65,6 +65,48 @@ iframe {
     background: #ddc002;
 }
 
+.btn-bars {
+    
+    width: 40px;
+    height: 40px;  
+    position: relative;
+    z-index: 9999;
+}
+
+.btn-bars span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: black; 
+    left: 0;
+    transition: 0.2s;
+}
+
+.btn-bars span:first-child {
+    top: 7px;
+}
+.btn-bars span:nth-child(2) {
+    top: 18px
+}
+.btn-bars span:nth-child(3) {
+    bottom: 7px;
+}
+
+.btn-bars.active span:first-child {
+    top: 18px;
+    transform: rotate(45deg);
+}
+.btn-bars.active span:nth-child(2) {
+   opacity: 0;
+   visibility: hidden;
+}
+.btn-bars.active span:nth-child(3) {
+    bottom: 18px;
+    transform: rotate(-45deg);
+}
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .container {
@@ -133,6 +175,10 @@ iframe {
     align-items: center;
 }
 
+.header-logo {
+    position: relative;
+    z-index: 9999;
+}
 .header-logo a {
     height: 68px;
     display: block;
@@ -585,6 +631,7 @@ iframe {
     margin: 20px 0;
     cursor: pointer;
 }
+
 .courses-card {
     width: 320px;
     margin: 20px 0;
@@ -683,8 +730,6 @@ iframe {
     font-size: 28px;
 }
 
-
-
 .courses-more-img {
     width: 100%;
     height: 500px;
@@ -692,7 +737,7 @@ iframe {
     position: relative;
 }
 
-.courses-more-img img{
+.courses-more-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -747,6 +792,7 @@ iframe {
     background: #f7d917;
     margin-right: 10px;
 }
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * ADDITIONAL COURSES * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .additional-courses {
@@ -944,5 +990,51 @@ iframe {
 
     .courses-background-text {
         font-size: 100px;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 800 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 800px) {
+    .header-menu ul li {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-menu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .header-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header-menu ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-menu ul li a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .header-menu ul li {
+        margin: 10px 0;
     }
 }

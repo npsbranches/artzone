@@ -33,6 +33,7 @@ $('.testimonials-text').slick({
     slidesToScroll: 1,
 })
 
+
 $('.courses-card').click(function() {
     $(this).siblings('.courses-more').addClass('active');
 })
@@ -50,3 +51,8 @@ $(".header-menu").on("click", "a", function (event) {
         scrollTop: top
     }, 1500);
 });
+
+$('.btn-bars').click(function() {
+    $('.header-menu').toggleClass('active');
+    $(this).toggleClass('active');
+})
