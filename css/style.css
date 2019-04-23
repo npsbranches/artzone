@@ -1040,6 +1040,14 @@ iframe {
     .hero-text h2 {
         font-size: 40px;
     }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .about-company-text p {
+        font-size: 18px;
+    }
 }
 
 
@@ -1048,6 +1056,15 @@ iframe {
 @media screen and (max-width: 800px) {
     .header-menu ul li {
         margin: 0 15px;
+    }
+
+    .about-company-text {
+        margin-left: 50px;
+    }
+
+    .about-company-text .container {
+        transform: translateX(0);
+        padding-left: 50px;
     }
 }
 
