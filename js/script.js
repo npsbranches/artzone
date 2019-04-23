@@ -33,8 +33,12 @@ $('.testimonials-text').slick({
     slidesToScroll: 1,
 })
 
-$('.courses-card-wrapper').click(function() {
-    $(this).children('.courses-more').toggleClass('active');
+$('.courses-card').click(function() {
+    $(this).siblings('.courses-more').addClass('active');
+})
+
+$('.courses-more-close').click(function() {
+    $(this).parent('.courses-more').removeClass('active');
 })
 
 $(".header-menu").on("click", "a", function (event) {
