@@ -1144,8 +1144,11 @@ iframe {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 576 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 576px) {
     .hero-background-text {
         font-size: 30px;
+    }
+    .about-company-text .container {
+        padding-left: 25px;
     }
 }
