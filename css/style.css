@@ -70,7 +70,7 @@ iframe {
 }
 
 .btn-bars {
-
+    display: none;
     width: 40px;
     height: 40px;
     position: relative;
@@ -281,7 +281,7 @@ iframe {
     left: 10px;
     font-size: 144px;
     font-weight: 700;
-    color: #e0e0e0;
+    color: #afafaf;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT COMPANY * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -614,7 +614,7 @@ iframe {
     right: 10px;
     font-size: 144px;
     font-weight: 700;
-    color: #ebebeb;
+    color: #afafaf;
 }
 
 .courses-cards {
@@ -1002,6 +1002,47 @@ iframe {
     }
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1180 * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media screen and (max-width: 1180px) {
+    .hero-img {
+        height: 250px;
+        flex-basis: 35%;
+    }
+
+    .hero-background-text {
+        font-size: 80px;
+    }
+
+    .hero-text h2 {
+        font-size: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+    .hero-text h3 {
+        font-size: 20px;
+    }
+
+    .hero-text {
+        padding-left: 30px;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 992 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 992px) {
+    .hero-text {
+        flex-basis: 55%;
+    }
+
+    .hero-text h2 {
+        font-size: 40px;
+    }
+}
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 800 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 800px) {
@@ -1010,7 +1051,20 @@ iframe {
     }
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 768 * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media screen and (max-width: 768px) {
+
+    .hero-background-text {
+        font-size: 60px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+    .btn-bars {
+        display: flex;
+    }
+
     .header-menu {
         position: absolute;
         width: 100%;
@@ -1045,5 +1099,25 @@ iframe {
 
     .header-menu ul li {
         margin: 10px 0;
+    }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 640 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 640px) {
+    .hero .container {
+        flex-direction: column;
+    }
+    .hero {
+        align-items:flex-start;
+        padding-top: 30px;
+    }
+
+    .hero-text {
+        text-align: center;
+        flex-basis: 100%;
+        padding-left: 0;
+        padding-top: 30px;
     }
 }
