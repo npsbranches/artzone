@@ -1106,8 +1106,7 @@ iframe {
         width: 100%;
         align-items: center;
         justify-content: center;
-        height: 120vh;
-        padding-bottom: 20vh;
+        height: 100vh;
     }
 
     .header-menu ul li a {
