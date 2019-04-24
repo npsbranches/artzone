@@ -46,6 +46,9 @@ iframe {
     outline: none;
 }
 
+.displaynone {
+    display: none;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -645,6 +648,7 @@ iframe {
     width: 320px;
     margin: 20px 0;
     position: relative;
+    display: block;
 }
 
 .courses-card:before {
@@ -703,25 +707,30 @@ iframe {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * COURSES MORE * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .courses-more {
-    position: absolute;
-    top: 40px;
-    left: 130px;
+    /* top: 40px;
+    left: 130px; */
     background: #fff;
     z-index: 20;
-    height: 90%;
-    bottom: 0;
-    visibility: hidden;
-    opacity: 0;
     transition: 0.2s;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
 }
-
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+}
 .courses-more.active {
     visibility: visible;
     opacity: 1;
+}.mfp-content {
+    position: unset;
 }
 
+.mfp-close {
+    font-size: 40px;
+}
 .courses-more-close {
-    display: block;
+    display: none;
     min-width: 70px;
     max-width: 70px;
     height: 70px;
@@ -732,7 +741,7 @@ iframe {
     left: 30px;
     top: -30px;
     z-index: 200;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -775,7 +784,7 @@ iframe {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90%;
+    padding-bottom: 50px;
 }
 
 .courses-more-info p {
@@ -1048,6 +1057,14 @@ iframe {
     .about-company-text p {
         font-size: 18px;
     }
+    .advantages-card {
+        padding-right: 30px;
+        flex-basis: 50%;
+    }
+
+    .advantages-cards .container {
+        transform: translate(15px);
+    }
 }
 
 
@@ -1065,6 +1082,10 @@ iframe {
     .about-company-text .container {
         transform: translateX(0);
         padding-left: 50px;
+    }
+
+    .advantages-cards {
+        margin-right: 50px;
     }
 }
 
@@ -1149,5 +1170,19 @@ iframe {
     }
     .about-company-text .container {
         padding-left: 25px;
+    }
+   
+    .about-company-text {
+        margin-left: 25px;
+    }
+
+    .advantages-cards {
+        margin-right: 25px;
+    }
+    .advantages-card {
+        flex-basis: 100%;
+    }
+    .testimonials-images {
+        width: 100%;
     }
 }
