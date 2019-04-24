@@ -1089,6 +1089,15 @@ iframe {
     .advantages-cards {
         margin-right: 50px;
     }
+
+    .courses-cards {
+        margin-left: 50px;
+    }
+
+    .courses-cards .container {
+        transform: translateX(0);
+        padding-left: 15px;
+    }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 768 * * * * * * * * * * * * * * * * * * * * * * * * * */
