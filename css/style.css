@@ -1086,6 +1086,7 @@ iframe {
     .feedback-right {
         max-width: 100%;
     }
+
     .feedback-section .container {
         max-width: 100%;
         padding: 50px;
@@ -1181,6 +1182,10 @@ iframe {
     .courses-more-info ul li:before {
         width: 200px;
     }
+
+    .feedback-form div {
+        flex-direction: column;
+    }
 }
 
 
@@ -1230,6 +1235,7 @@ iframe {
     .courses-cards {
         margin-left: 25px;
     }
+
     .advantages-card {
         flex-basis: 100%;
     }
@@ -1241,7 +1247,7 @@ iframe {
     .courses-more-name {
         height: unset;
     }
-    
+
     .courses-more-info ul li:before {
         width: 100px;
     }
@@ -1251,8 +1257,8 @@ iframe {
     .courses-card-wrapper {
         width: 250px;
     }
+
     .courses-more-info ul li:before {
         width: 20px;
     }
 }
-
