@@ -135,6 +135,8 @@ iframe {
 .section-title {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 900;
 }
 
 .section-title h2 {
