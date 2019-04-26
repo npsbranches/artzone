@@ -82,7 +82,7 @@ iframe {
 
 .btn-bars span {
     position: absolute;
-    width: 40px;
+    width: 28px;
     height: 4px;
     border-radius: 4px;
     background: black;
@@ -91,7 +91,7 @@ iframe {
 }
 
 .btn-bars span:first-child {
-    top: 7px;
+    top: 10px;
 }
 
 .btn-bars span:nth-child(2) {
@@ -99,7 +99,7 @@ iframe {
 }
 
 .btn-bars span:nth-child(3) {
-    bottom: 7px;
+    bottom: 10px;
 }
 
 .btn-bars.active span:first-child {
@@ -1157,6 +1157,14 @@ iframe {
         display: flex;
     }
 
+    .header {
+        height: unset;
+        padding: 5px 0;
+    }
+
+    .header-logo a {
+        height: 50px;
+    }
     .header-menu {
         width: 100%;
         height: 100%;
