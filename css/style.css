@@ -1231,13 +1231,16 @@ iframe {
     }
     
     .courses-more-info ul li:before {
-        width: 200px;
+        width: 100px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .courses-card-wrapper {
         width: 250px;
+    }
+    .courses-more-info ul li:before {
+        width: 20px;
     }
 }
 
