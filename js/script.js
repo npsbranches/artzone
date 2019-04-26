@@ -71,16 +71,8 @@ $('.testimonials-text').slick({
 })
 
 
-
-
-// $('.courses-card').click(function() {
-//     $('.courses-card').magnificPopup();
-//     $(this).siblings('.courses-more').addClass('active');
-//     //
-// })
-
 $('.open-popup-link').magnificPopup({
-    // type: 'ajax'
+
 });
 
 
@@ -98,10 +90,16 @@ $(".header-menu").on("click", "a", function (event) {
     }, 1500);
 });
 
+$(".header-menu").on("click", "a", function (event) {
+  $('.header-menu').toggleClass('active');
+  $('.btn-bars').toggleClass('active');
+  $('body').toggleClass('overflow');
+});
+
 $('.btn-bars').click(function() {
     $('.header-menu').toggleClass('active');
     $(this).toggleClass('active');
     $('body').toggleClass('overflow');
 })
 
-// Inline popups
+
