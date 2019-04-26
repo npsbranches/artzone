@@ -1,3 +1,16 @@
+
+
+if (window.innerWidth < 576) {
+
+  function removeDummy() {
+    var elem = document.getElementById('aos-css-file');
+    elem.parentNode.removeChild(elem);
+    return false;
+  }
+  removeDummy();
+}
+
+
 $('.teachers').slick({
     slidesToShow: 4,
     arrows: false,
