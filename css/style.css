@@ -1237,10 +1237,16 @@ iframe {
 @media screen and (max-width: 576px) {
     .hero-background-text {
         font-size: 30px;
+        display: none;
     }
 
     .courses-background-text {
         font-size: 30px;
+        display: none;
+    }
+
+    .courses {
+        padding-top: 30px;
     }
 
     .about-company-text .container {
@@ -1289,6 +1295,14 @@ iframe {
 
     .courses-more-info p {
         padding: 30px;
+    }
+
+    .feedback-right-contacts {
+        padding: 30px;
+    }
+
+    .feedback-form {
+        padding: 0;
     }
 }
 
