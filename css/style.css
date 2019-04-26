@@ -714,6 +714,8 @@ iframe {
     max-width: 1000px;
     width: 100%;
     margin: auto;
+    top: 20px;
+    position: relative;
 }
 
 
@@ -1220,6 +1222,9 @@ iframe {
         width: 100%;
     }
 
+    .courses-more-name {
+        height: unset;
+    }
 }
 
 @media screen and (max-width: 480px) {
