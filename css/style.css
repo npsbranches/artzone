@@ -1304,6 +1304,9 @@ iframe {
     .feedback-form {
         padding: 0;
     }
+    .testimonials {
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
