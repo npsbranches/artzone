@@ -1078,6 +1078,18 @@ iframe {
     .advantages-cards .container {
         transform: translate(15px);
     }
+
+    .feedback-section {
+        flex-direction: column;
+    }
+
+    .feedback-right {
+        max-width: 100%;
+    }
+    .feedback-section .container {
+        max-width: 100%;
+        padding: 50px;
+    }
 }
 
 
