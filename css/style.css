@@ -1265,6 +1265,14 @@ iframe {
     .courses-more-info ul li:before {
         width: 100px;
     }
+
+    .for-whom ul li {
+        font-size: 16px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 480px) {
