@@ -1165,6 +1165,10 @@ iframe {
     .header-menu ul li {
         margin: 10px 0;
     }
+
+    .courses-more-info ul li:before {
+        width: 200px;
+    }
 }
 
 
@@ -1224,6 +1228,10 @@ iframe {
 
     .courses-more-name {
         height: unset;
+    }
+    
+    .courses-more-info ul li:before {
+        width: 200px;
     }
 }
 
