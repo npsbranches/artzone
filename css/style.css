@@ -1051,6 +1051,18 @@ iframe {
     }
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1024 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 1024px) {
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        margin: 30px 0;
+    }
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 992 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 992px) {
@@ -1260,5 +1272,10 @@ iframe {
 
     .courses-more-info ul li:before {
         width: 20px;
+    }
+
+    .footer-map {
+        max-width: 360px;
+        width: 100%;
     }
 }
