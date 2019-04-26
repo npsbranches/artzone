@@ -633,20 +633,19 @@ iframe {
 .courses-cards .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     transform: translateX(-55px);
     padding-left: 130px;
 }
 
 .courses-card-wrapper {
-    width: 320px;
-    margin: 20px 0;
+    width: 300px;
+    margin: 20px;
     cursor: pointer;
 }
 
 .courses-card {
-    width: 320px;
-    margin: 20px 0;
+    width: 100%;
     position: relative;
     display: block;
 }
@@ -721,16 +720,20 @@ iframe {
 .mfp-close-btn-in .mfp-close {
     color: #fff;
 }
+
 .courses-more.active {
     visibility: visible;
     opacity: 1;
-}.mfp-content {
+}
+
+.mfp-content {
     position: unset;
 }
 
 .mfp-close {
     font-size: 40px;
 }
+
 .courses-more-close {
     display: none;
     min-width: 70px;
@@ -1008,7 +1011,7 @@ iframe {
         font-size: 100px;
     }
 
-    
+
     .courses-background-text {
         font-size: 100px;
     }
@@ -1024,6 +1027,7 @@ iframe {
     .hero-background-text {
         font-size: 80px;
     }
+
     .courses-background-text {
         font-size: 80px;
     }
@@ -1063,6 +1067,7 @@ iframe {
     .about-company-text p {
         font-size: 18px;
     }
+
     .advantages-card {
         padding-right: 30px;
         flex-basis: 50%;
@@ -1191,10 +1196,11 @@ iframe {
     .courses-background-text {
         font-size: 30px;
     }
+
     .about-company-text .container {
         padding-left: 25px;
     }
-   
+
     .about-company-text {
         margin-left: 25px;
     }
@@ -1202,10 +1208,22 @@ iframe {
     .advantages-cards {
         margin-right: 25px;
     }
+
+    .courses-cards {
+        margin-left: 25px;
+    }
     .advantages-card {
         flex-basis: 100%;
     }
+
     .testimonials-images {
         width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .courses-card-wrapper {
+        width: 250px;
     }
 }
